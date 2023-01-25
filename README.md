@@ -6,10 +6,10 @@ pixamo/installer is a Laravel package that makes it easy to install your applica
 
 You can install the package with [Composer](http://getcomposer.org/) using the following command:
 ```bash
-    composer require pixamo/installer
+composer require pixamo/installer
 ```
 
 Copy the package config to your local config with the publish command:
 ```bash
-    php artisan vendor:publish --tag=installer
+php artisan vendor:publish --tag=installer
 ```

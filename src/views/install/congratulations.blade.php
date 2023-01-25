@@ -11,7 +11,7 @@
                     <p class=" mt-12 text-gray-500 text-2xl font-light">Your Site is Now Ready. You can Check It.</p>
                     <div class=" mt-8 mb-5">
                         <a class=" border border-indigo-500 px-7 py-3 rounded-md text-indigo-500 mr-3" href="{{ url('/') }}">View Site</a>
-                        <a class="border border-indigo-500 bg-indigo-500 px-7 py-3 rounded-md text-white font-light" href="{{ url(config('installer.admin_login') ?? '/login') }}">Admin Login</a>
+                        <a class="border border-indigo-500 bg-indigo-500 px-7 py-3 rounded-md text-white font-light" href="{{ url(config('installer.admin_login', '/admin/login')) }}">Admin Login</a>
                     </div>
                 </div>
             </div>

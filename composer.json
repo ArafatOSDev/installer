@@ -20,7 +20,10 @@
         "laravel": {
             "providers": [
                 "Pixamo\\Installer\\InstallerServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Installer": "Pixamo\\Installer\\Facades\\Installer"
+            }
         }
     }
 }

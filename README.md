@@ -13,3 +13,18 @@ Copy the package config to your local config with the publish command:
 ```bash
 php artisan vendor:publish --tag=installer
 ```
+
+You can also check the installer is now active or not.
+```bash
+use Pixamo\Installer\Installer;
+
+Installer::isActive();
+```
+
+If installer is active you can redirect it to installer page.
+```bash
+if(Installer::isActive())
+{
+    return redirect('install');
+}
+```

@@ -49,11 +49,11 @@
                             <tbody>
                                 <tr class="bg-white border-b border-slate-100">
                                     <td class=" px-12 py-5 text-base">
-                                        PHP >= {{ config('installer.php_version') }}
+                                        PHP >= {{ config('installer.php_version', 8.1) }}
                                     </td>
                                     <td class="px-12 py-5 text-center">
                                         <?php
-                                        if ($info['phpversion'] >= config('installer.php_version')) { ?>
+                                        if ($info['phpversion'] >= config('installer.php_version', 8.1)) { ?>
                                             <svg class="fill-green-500 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-.997-4L6.76 11.757l1.414-1.414 2.829 2.829 5.656-5.657 1.415 1.414L11.003 16z"/></svg>
                                             <?php
                                         }else{ ?>
@@ -227,7 +227,7 @@
                         </table>
                         <?php
                         $page_url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-                        if ($info['phpversion'] >= 7.2 && $info['mbstring'] == 1 && $info['bcmath'] == 1 && $info['ctype'] == 1 && $info['json'] == 1 && $info['openssl'] == 1 && $info['pdo'] == 1 && $info['tokenizer'] == 1 && $info['xml'] == 1) { ?>
+                        if ($info['phpversion'] >= 7.2 && $info['mbstring'] == 1 && $info['bcmath'] == 1 && $info['ctype'] == 1 && $info['json'] == 1 && $info['openssl'] == 1 && $info['pdo'] == 1 && $info['tokenizer'] == 1 && $info['xml'] == 1 && $info['fileinfo'] == 1 && $info['allow_url_fopen'] == 1) { ?>
                                 <a href="{{ $page_url.'/configuration' }}" class="mt-8 bg-indigo-500 px-10 mr-5 text-white rounded-md float-right py-3 flex items-center text-lg"><span>Next</span> <svg class=" fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></a>
                             <?php
                         }else{ ?>

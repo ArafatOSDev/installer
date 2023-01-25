@@ -6,6 +6,8 @@
 
   <title>@yield('title')</title>
 
+  <link rel="icon" type="image/png" href="{{ config('installer.favicon_path', asset('favicon.ico')) }}"/>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <style type="text/tailwindcss">
     @layer utilities {

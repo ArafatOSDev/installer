@@ -2,7 +2,7 @@
 
 pixamo/installer is a Laravel package that makes it easy to install your application with just one click. With this package, you can quickly set up your application's environment, dependencies, and configurations without having to manually run multiple commands or manually edit files. It streamlines
 
-![Pixamo Installer V1.0](https://s3.gifyu.com/images/ezgif.com-gif-maker943f6eeaf223a0d7.gif)
+![Pixamo Installer V1.0](https://s3.gifyu.com/images/ezgif.com-gif-maker943f6eeaf223a0d7.gif){ width="600" height="375" style="display: block; margin: 0 auto" }
 
 ## Installation
 

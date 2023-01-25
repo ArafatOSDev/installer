@@ -15,9 +15,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "imliam/laravel-env-set-command": "^1.0"
-    },
+    "require": {},
     "extra": {
         "laravel": {
             "providers": [

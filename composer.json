@@ -1,0 +1,28 @@
+{
+    "name": "pixamo/installer",
+    "description": "pixamo/installer is a Laravel package that makes it easy to install your application with just one click. With this package, you can quickly set up your application's environment, dependencies, and configurations without having to manually run multiple commands or manually edit files. It streamlines the installation process and makes it more efficient, saving you time and effort. It's perfect for both new and experienced developers. Give it a try and see how it can simplify your development process.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pixamo\\Installer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arafat Hossain",
+            "email": "harafat949@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "imliam/laravel-env-set-command": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pixamo\\Installer\\InstallerServiceProvider"
+            ]
+        }
+    }
+}

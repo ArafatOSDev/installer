@@ -2,15 +2,40 @@
 
 return [
 
-
-    // Admin Login Page Url
-    'admin_login' => '/admin/login',
+    /*
+    |--------------------------------------------------------------------------
+    | Require PHP Version
+    --------------------------------------------------------------------------
+    |
+    | Here you can set which PHP version is required for install this project.
+    |
+    */
 
     'php_verison' => 8.1,
 
-    // Set Your Folder Permissions
-    'permissions' => [
+    /*
+    |--------------------------------------------------------------------------
+    | Admin Login Panel Url
+    --------------------------------------------------------------------------
+    |
+    | Here you can set Admin Login Panel Url.
+    |
+    */
 
+    'admin_login' => '/admin/login',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Set Folder Permissions
+    --------------------------------------------------------------------------
+    |
+    | Here you can Set Folder Permissions.
+    |
+    */
+
+    'permissions' => [
+        base_path('.env'),
+        base_path('bootstrap/cache')
     ]
 
 ];

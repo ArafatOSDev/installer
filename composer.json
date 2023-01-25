@@ -19,7 +19,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Pixamo\\Installer\\InstallerServiceProvider"
+                "Pixamo\\Installer\\InstallerServiceProvider",
+                "Pixamo\\Installer\\PermissionsServiceProvider"
             ],
             "aliases": {
                 "Installer": "Pixamo\\Installer\\Facades\\Installer"

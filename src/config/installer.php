@@ -33,7 +33,7 @@ return [
     |
     */
 
-    'favicon_path' => asset('favicon.ico'),
+    'favicon_path' => 'favicon.ico',
 
     /*
     |--------------------------------------------------------------------------

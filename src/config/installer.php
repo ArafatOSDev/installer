@@ -46,7 +46,8 @@ return [
 
     'permissions' => [
         base_path('.env'),
-        base_path('bootstrap/cache')
+        base_path('bootstrap/cache'),
+        base_path('storage')
     ]
 
 ];

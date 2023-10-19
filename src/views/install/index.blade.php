@@ -3,7 +3,7 @@
 @section('title', 'Installer')
 
 @section('content')
-    <div class="bg-yellow-50 min-h-screen">
+    <div class=" bg-violet-50 min-h-screen">
         <div class="container mx-auto">
             <div class="2xl:flex xl:flex lg:flex md:block 2xl:space-x-8 xl:space-x-8 lg:space-x-8 md:space-x-0 py-20 relative">
                 @include('installer::layouts.partials.sidebar')
@@ -40,7 +40,7 @@
                 $permissions=$permissions->check();
 
                 ?>
-                <div class=" bg-white h-auto rounded-lg w-full px-12 py-12">
+                <div class=" bg-white h-auto rounded-3xl w-full px-12 py-12">
                     <h2 class="text-center text-4xl font-medium">{{ __('Permissions') }}</h2>
                     <div class="relative overflow-x-auto mt-8">
                         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -251,10 +251,10 @@
                         <?php
                         $page_url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                         if ($info['phpversion'] >= 7.2 && $info['mbstring'] == 1 && $info['bcmath'] == 1 && $info['ctype'] == 1 && $info['json'] == 1 && $info['openssl'] == 1 && $info['pdo'] == 1 && $info['tokenizer'] == 1 && $info['xml'] == 1 && $info['fileinfo'] == 1 && $info['allow_url_fopen'] == 1 && $permission == true) { ?>
-                                <a href="{{ url('install/configuration') }}" class="mt-8 bg-indigo-500 px-10 mr-5 text-white rounded-md float-right py-3 flex items-center text-lg"><span>{{ __('Next') }}</span> <svg class=" fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></a>
+                                <a href="{{ url('install/configuration') }}" class="mt-8 bg-gradient px-10 mr-5 text-white rounded-md float-right py-3 flex items-center text-lg"><span>{{ __('Next') }}</span> <svg class=" fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></a>
                             <?php
                         }else{ ?>
-                            <a class="mt-8 bg-indigo-100 px-10 mr-5 text-gray-400 rounded-md float-right py-3 flex items-center text-lg cursor-not-allowed"><span>{{ __('Next') }}</span> <svg class=" fill-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></a>
+                            <a class="mt-8 bg-gradient opacity-50 px-10 mr-5 text-gray-400 rounded-md float-right py-3 flex items-center text-lg cursor-not-allowed"><span>{{ __('Next') }}</span> <svg class=" fill-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></a>
                         <?php
                         }
                         ?>

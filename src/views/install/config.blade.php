@@ -16,11 +16,11 @@
             <p class=" text-2xl text-gray-600">{{ __('Please Wait... It will take several times.') }}</p>
         </div>
     </div>
-    <div class="bg-yellow-50 min-h-screen">
+    <div class=" bg-violet-50 min-h-screen">
         <div class="container mx-auto">
             <div class="2xl:flex xl:flex lg:flex md:block 2xl:space-x-8 xl:space-x-8 lg:space-x-8 md:space-x-0 py-20 relative">
                 @include('installer::layouts.partials.sidebar')
-                <div class=" bg-white h-auto rounded-lg w-full px-12 py-12">
+                <div class=" bg-white h-auto rounded-3xl w-full px-12 py-12">
                     <h2 class="text-center text-4xl font-medium">{{ __('Configurations') }}</h2>
                     <form id="formsubmit" action="#">
                         <div class="relative overflow-x-auto mt-8">
@@ -54,7 +54,7 @@
                                     <input name="DB_PASSWORD" type="text" class="w-full border border-slate-200 rounded-md h-14 px-5 placeholder:text-gray-300 placeholder:font-light" placeholder="Database Password">
                                 </div>
                             </div>
-                            <button type="submit" class="mt-8 bg-indigo-500 px-10 text-white rounded-md float-right py-3 flex items-center text-lg"><span>{{ __('Install & Next') }}</span> <svg class=" fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></button>
+                            <button type="submit" class="mt-8 bg-gradient px-10 text-white rounded-md float-right py-3 flex items-center text-lg"><span>{{ __('Install & Next') }}</span> <svg class=" fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg></button>
                         </div>
                     </form>
                 </div>
